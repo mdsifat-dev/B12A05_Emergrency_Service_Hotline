@@ -29,7 +29,7 @@ document.body.appendChild(div);
 
 - Event Delegation means instead of adding event listeners to lots of child elements, you put ONE listener on their parent and let event bubbling handle the rest. The parent “catches” the event when it bubbles up, and you check which child triggered it.
 
-*bold*Why is it Useful?
+**Why is it Useful?**
 
 - Less Code → You don’t need 100 listeners for 100 items.
 - Better Performance → One listener instead of many.
