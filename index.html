@@ -66,7 +66,12 @@
         <div
           class="coin flex items-center justify-center gap-[10px] bg-[#41FF6B]/10 w-[110px] h-[40px] md:w-[123px] md:h-[52px] rounded-[50px]"
         >
-          <p class="inter-font font-black text-[15px] md:text-[16px]">100</p>
+          <p
+            id="coin-count"
+            class="inter-font font-black text-[15px] md:text-[16px]"
+          >
+            100
+          </p>
           <img
             src="./assets/coin.png"
             alt="coin"
@@ -80,7 +85,7 @@
           <p
             class="inter-font text-center font-semibold text-[15px] md:text-[16px] text-white"
           >
-            <span>0</span> Copy
+            <span id="copy-count">0</span> Copy
           </p>
         </div>
       </div>
@@ -648,6 +653,33 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Call History Section -->
+      <div
+        class="call-history bg-white rounded-[12px] shadow-lg w-full h-auto max-w-[432px] md:max-w-[200px] lg:max-w-[400px] p-6 mt-12"
+      >
+        <!-- title and clear button -->
+        <div
+          class="flex flex-col gap-3 lg:flex-row items-center justify-between mb-4 sm:mt-3"
+        >
+          <div class="flex items-center gap-[8px]">
+            <i class="fa-regular fa-clock text-[20px] sm:text-[22px]"></i>
+            <p
+              class="hind-madurai-medium text-[20px] sm:text-[22px] text-black"
+            >
+              Call History
+            </p>
+          </div>
+          <button
+            id="clear-btn"
+            class="hind-madurai-medium text-[18px] px-[36px] py-[12px] bg-[#00A63E] hover:bg-white text-white hover:text-black duration-300 hover:border-1 hover:border-[#D4D6D5] cursor-pointer rounded-[50px] max-h-[50px]"
+          >
+            Clear
+          </button>
+        </div>
+        <!-- list items -->
+        <div id="history-list-container" class=""></div>
       </div>
     </section>
 
