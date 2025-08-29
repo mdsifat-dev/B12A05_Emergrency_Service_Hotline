@@ -29,11 +29,11 @@ document.body.appendChild(div);
 
 - Event Delegation means instead of adding event listeners to lots of child elements, you put ONE listener on their parent and let event bubbling handle the rest. The parent “catches” the event when it bubbles up, and you check which child triggered it.
 
-**Bold Text**Why is it Useful?
+*bold*Why is it Useful?
 
 - Less Code → You don’t need 100 listeners for 100 items.
 - Better Performance → One listener instead of many.
-- Handles Dynamic Elements → Even if new <li> items are added later, the parent listener still works.
+- Handles Dynamic Elements → Even if new items are added later, the parent listener still works.
 
 ### 5. What is the difference between preventDefault() and stopPropagation() methods?
 
